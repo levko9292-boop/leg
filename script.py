@@ -1,5 +1,7 @@
 import telebot
+from dotenv import load_dotenv
 
+load_dotenv()
 bot  = telebot.TeleBot('8110454083:AAHmz147QbThITOhCnYrQxbGzEDD8vU2rIc')
 
 @bot.message_handler(commands=['start'])
@@ -72,5 +74,6 @@ if __name__ == '__main__':
 if __name__ == '__main__':
 
   bot.polling(none_stop=True)
+
 
 
